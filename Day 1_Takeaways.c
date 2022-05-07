@@ -12,6 +12,8 @@ https://www.youtube.com/watch?v=ohVRskLlHqM*/
 //So Imma just mention what needs to  be mentioned. NOw i wonder how i can make the message highlighted so that i can look at the code directly in case i come for revisiting.
 
 //+++++++++++++++
+// Code to understand Typecasting
+//+++++++++++++++
 int main(){
   float Avg_Profit;
   int Price_of_One=59;
@@ -24,3 +26,28 @@ int main(){
   return 0;
   
 }
+//+++++++++++++++
+//Code to undderstand Malloc Array 
+//+++++++++++++++
+#include<stdio.h>
+#include<stdlib.h>
+
+int main()
+{
+    printf("Enter the size of the array? \n");
+    int size;
+    scanf("%d",&size);
+    int *A;
+    A=(int*)malloc(size*sizeof(int));
+    printf("Enter the elements of the array?");
+    int i;
+    for (i=0;i<size;i++)
+        scanf("%d",&A[i]);
+
+    printf("The values in the array are:\n");
+    for (i=0;i<size;i++)
+        printf("%d\t",A[i]);
+    return 0;
+
+}
+//+++++++++++++++
